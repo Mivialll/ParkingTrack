@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bivashpandey.dr.Questions">
+
+    <TextView
+        android:id="@+id/symptomQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="54dp"
+        android:textSize="20sp"
+        android:text="@string/question1" />
+
+    <Spinner
+        android:id="@+id/spinnerQues1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/symptomQues"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/symptomQues"
+        android:layout_toRightOf="@+id/symptomQues"
+        android:entries="@array/symptoms"/>
+
+    <TextView
+        android:id="@+id/temperatureQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/symptomQues"
+        android:layout_alignStart="@+id/symptomQues"
+        android:layout_below="@+id/symptomQues"
+        android:layout_marginTop="62dp"
+        android:textSize="20sp"
+        android:text="@string/question2" />
+
+    <Spinner
+        android:id="@+id/spinnerQues2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/temperatureQues"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/temperatureQues"
+        android:layout_toRightOf="@+id/temperatureQues"
+        android:entries="@array/bodyTemperature"/>
+
+    <TextView
+        android:id="@+id/amountOfFoodQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/temperatureQues"
+        android:layout_alignStart="@+id/temperatureQues"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:text="@string/question3" />
+
+    <Spinner
+        android:id="@+id/spinnerQues3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/amountOfFoodQues"
+        android:layout_alignBottom="@+id/amountOfFoodQues"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/amountOfFoodQues"
+        android:layout_toRightOf="@+id/amountOfFoodQues"
+        android:entries="@array/amountOfFood" />
+
+    <TextView
+        android:id="@+id/timedurationQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amountOfFoodQues"
+        android:layout_alignStart="@+id/amountOfFoodQues"
+        android:layout_below="@+id/spinnerQues3"
+        android:layout_marginTop="73dp"
+        android:text="@string/question4"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerQues4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timedurationQues"
+        android:layout_toEndOf="@+id/amountOfFoodQues"
+        android:layout_toRightOf="@+id/amountOfFoodQues"
+        android:entries="@array/timeDuration"/>
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="41dp"
+        android:layout_toEndOf="@+id/timedurationQues"
+        android:layout_toRightOf="@+id/timedurationQues"
+        android:text="@string/submitButton" />
+</RelativeLayout>

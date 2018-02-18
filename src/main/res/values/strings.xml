@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Dr</string>
+    <string name="signInButton">SignIn</string>
+    <string name="signUpButton">SignUp</string>
+    <string name="emailHint">email</string>
+    <string name="passwordHint">password</string>
+    <string name="firstName">FirstName</string>
+    <string name="lastName">LastName</string>
+    <string name="repasswordhint">Re-Enter Password</string>
+    <string name="submitButton">Submit</string>
+    <string name="signUpSuccessful"> Successfully Signed Up!</string>
+    <string name="profileName">Bivash Pandey</string>
+    <string name="age">Age: 20</string>
+    <string name="diseaseSuffered">Number of Illness: </string>
+    <string name="illnesstime">0</string>
+    <string name="confirmingIllness">Are you suffering from illness ?</string>
+    <string name="buttonYes">Yes</string>
+    <string name="buttonNo">No</string>
+    <string name="healthyLife">Enjoy Your Healthy Life.</string>
+    <string name="question1">Symptom</string>
+    <string name="question2">Temperature</string>
+    <string name="question3">Quantity of Food</string>
+    <string name="question4">Time Duration</string>
+    <string name="finalResult">Its normal. You can take Paracetamol.</string>
+
+    <string-array name="symptoms">
+        <item>Light Fever</item>
+        <item>Fever</item>
+        <item>Headache</item>
+        <item>Common Cold</item>
+    </string-array>
+
+    <string-array name="bodyTemperature">
+        <item> 90 to 95</item>
+        <item> 96 to 98</item>
+        <item> 98 to 100</item>
+        <item> 101 to 104</item>
+    </string-array>
+
+    <string-array name="amountOfFood">
+        <item>Normal</item>
+        <item>Little</item>
+        <item>Very Little</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="timeDuration">
+        <item>few days</item>
+        <item>few weeks</item>
+        <item>few months</item>
+        <item>few years</item>
+    </string-array>
+
+
+</resources>

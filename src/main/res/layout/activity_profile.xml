@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bivashpandey.dr.Profile">
+
+    <ImageView
+        android:id="@+id/accountImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/account" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/accountImage"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_toEndOf="@+id/accountImage"
+        android:layout_toRightOf="@+id/accountImage"
+        android:textSize="25sp"
+        android:text="@string/profileName" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/accountImage"
+        android:layout_alignLeft="@+id/profileName"
+        android:layout_alignStart="@+id/profileName"
+        android:layout_marginBottom="12dp"
+        android:text="@string/age"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/illnessTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/age"
+        android:layout_alignRight="@+id/age"
+        android:layout_below="@+id/age"
+        android:text="@string/diseaseSuffered"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/countIllness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/illnessTimes"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/illnessTimes"
+        android:layout_toRightOf="@+id/illnessTimes"
+        android:textSize="15sp"
+        android:text="@string/illnesstime" />
+
+    <TextView
+        android:id="@+id/confirmIllness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/illnessTimes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:text="@string/confirmingIllness"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmIllness"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/illnessTimes"
+        android:layout_toStartOf="@+id/illnessTimes"
+        android:text="@string/buttonYes" />
+
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonYes"
+        android:layout_alignBottom="@+id/buttonYes"
+        android:layout_alignEnd="@+id/countIllness"
+        android:layout_alignRight="@+id/countIllness"
+        android:text="@string/buttonNo" />
+
+
+</RelativeLayout>
